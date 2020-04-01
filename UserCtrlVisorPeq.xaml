@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="avanXpert_Info.UserCtrlVisorPeq"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             x:Name="UserCtrlVisorName"  
+             xmlns:local="clr-namespace:avanXpert_Info"
+             
+             mc:Ignorable="d" Height="125.851" Width="216.452" Initialized="UserCtrlVisorName_Initialized">
+    <Grid x:Name="GridVisor">
+        <Border Margin="0,-1,0,0" BorderBrush="#FFA6A698" BorderThickness="1,2,1,1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Margin="0,10,0,0">
+                    <TextBlock x:Name="TextBlockCantidad" Text="{Binding Valor}" IsEnabled="False" FontSize="{Binding ValorFontSize}" Background="#FFBBC9C6" TextAlignment="Right" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="169    " Padding="0,25,0,0" Height="114" MaxHeight="110"/>
+                    <TextBlock x:Name="TextBlockUnid" TextWrapping="Wrap" Text="{Binding Unids}" IsEnabled="False" FontSize="65" Background="#FFBBC9C6" Height="114" VerticalAlignment="Bottom" MaxHeight="114" Padding="0,36,0,0" Margin="168,0,0,0"/>
+                </Grid>
+                <Label x:Name="LabelRotulo" Content="{Binding Magnitud}" Height="30" VerticalAlignment="Top" Background="White" FontSize="14"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</UserControl>

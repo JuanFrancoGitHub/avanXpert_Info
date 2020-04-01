@@ -1,0 +1,21 @@
+﻿<Window x:Class="avanXpert_Info.Ventanas.VentVistaDatos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:avanXpert_Info.Ventanas"
+        mc:Ignorable="d"
+        Title="Vista de datos" Height="757.5" Width="1200.5">
+    <Grid>
+        <Label x:Name="Label1" Content="Datos" HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" Width="772" Height="23"/>
+        <Label x:Name="Label2" Content="Datos" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="772" Height="23"/>
+        <Label x:Name="Label3" Content="Datos" HorizontalAlignment="Left" Margin="10,336,0,0" VerticalAlignment="Top" Width="772" Height="24"/>
+        <Label x:Name="Label4" Content="Datos" HorizontalAlignment="Left" Margin="10,510,0,0" VerticalAlignment="Top" Width="772" Height="23"/>
+        <Button Content="Salir" Margin="0,688,10,10" IsCancel="True" Click="Button_Click" HorizontalAlignment="Right" Width="79"/>
+        <DataGrid x:Name="Dg1" Height="140" Margin="10,25,10,0" VerticalAlignment="Top" CanUserAddRows="False" CanUserDeleteRows="False"/>
+        <DataGrid x:Name="Dg2" Height="140" Margin="10,191,10,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="Dg3" Height="140" Margin="10,365,10,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="Dg4" Height="140" Margin="10,538,10,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
